@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas GIT 1</title>
+</head>
+<body>
+    <input type="number" id="tambah1"/>
+    <input type="number" id="tambah2"/>
+    <button onclick="hitungjarak()">hitung</button>
+    <br/>
+    <h3  id="hasiloutput"></h3>
+    <script>
+        function  hitungjarak(){
+            var waktu = document.getElementById('tambah1').value;
+            var kecepatan = document.getElementById('tambah2').value;
+            var jarak = parseInt(waktu) + parseInt(kecepatan);
+           document.getElementById('hasiloutput').innerHTML = jarak;
+        } 
+    </script>
+</body>
+</html>
